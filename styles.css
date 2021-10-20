@@ -1,0 +1,516 @@
+body{
+	background-color: #0a192f;
+	overflow: auto;	
+}
+
+.logo{
+	width:60px;
+	height: 60px;
+}
+
+.navbar-toggler{
+	width:40px;
+	height:30px;
+    /*box-shadow: 0px 1px 10px blue;*/
+    box-shadow: 0 1px 10px rgba(8, 112, 184, 0.7);
+}
+
+.navbar{
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px black;
+    padding-left: 35px;
+	padding-right: 35px;
+}
+
+.navbar-nav .nav-item .nav-link{
+	color: #ccd6f6;
+	font-family: var(--font-mono);
+	margin-right: 10px;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+	color:#64ffda;
+}
+
+a{
+	text-decoration: none;
+}
+
+.icons{
+	margin: 15px auto;
+	color: #8892b0;
+}
+
+a:hover{
+	color:#64ffda;
+}
+
+.lsidebar{
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  color:  white;
+  margin-bottom: 0;
+}
+
+.leftsidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  margin-right: 40px;
+}
+
+.leftsidebar::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color:#a8b2d1;
+}
+
+.rsidebar{
+	width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.rightsidebar{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 0;
+}
+
+.link{
+	color: #8892b0;
+	margin: 20px auto;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    writing-mode: vertical-rl;
+    line-height: 18px;
+    font-weight:  500;
+}
+
+.rightsidebar::after{
+	content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px;
+    background-color:#a8b2d1;
+    box-sizing: inherit;
+}
+
+.main{
+	margin-left: 160px;
+	margin-right: 160px;
+}
+
+.hd1{
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hi{
+	margin-top: 60px;
+}
+
+.hd2{
+	font-size: 5vw;
+	margin-top: 20px;
+	color: #ccd6f6;
+	font-weight: 700;
+	line-height: 1.1;
+	font-family: var(--font-sans);
+}
+
+.hd3{
+	font-size: 5vw;
+	margin-top: 10px;
+	color: #8892b0;
+	font-weight: 700;
+	line-height: 1.1;
+	font-family: var(--font-sans);
+}
+
+.para{
+	max-width: 550px;
+	margin-top: 30px;
+	font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+	line-height: 1.3;
+	font-size: 18px;
+	color: #8892b0;
+}
+
+.paragraph{
+    color: #8892b0;
+    max-width: 550px;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    line-height: 1.3;
+    font-size: 18px;
+}
+
+.resume-button {
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.resume-btn{
+	margin-top: 45px;
+}
+
+.resume-button:hover{
+	background-color: rgba(100,255,218,0.1);
+}
+
+.about{
+	margin-top: 150px;
+    margin-left: 30px;
+   margin-bottom: 35px;
+}
+
+p{
+	color: #8892b0;
+}
+
+/*bullet*/
+
+
+.bullet::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-size: 120%;
+  color: #64ffda; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 0em; /* Also needed for space (tweak if needed) */
+}
+
+
+.smallheading{
+    font-size: 170%;
+    color: #ccd6f6;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-weight: 700;
+
+}
+
+.bullet::after {
+    content: "";
+    display:inline-block;
+    width: 295px;
+    height: 1px;
+    margin-left: 18px;
+    margin-bottom: 6px;
+    background-color: #233554;
+}
+
+.temp p{
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.temp ul{
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.rcorners{
+  border-radius: 5px;
+  border: 2px solid #64ffda;
+  width: 275px;
+  height: 275px;
+}
+
+.imgborder{
+  position: absolute;
+  top: 45px;
+  left: 90px;
+  z-index: -1;
+}
+
+.skillborder{
+  margin-top: 30px;
+  width: 260px;
+  height: 250px;
+  background-color: rgba(100,255,218,0.09);
+}
+
+.skillborder:hover{
+  /*  background-color: rgba(100,255,218,0.2); */
+    border-radius: 5px;
+  border: 1px solid #64ffda;
+  width: 260px;
+  height: 250px;
+
+}
+
+.skills{
+    margin-left: 20px;
+}
+
+
+
+.skillheading{
+    margin-bottom: 0px;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: #64ffda;
+}
+
+
+.aboutimg{
+    height: 275px;
+    width: 275px;
+    border-radius: 5px;
+    filter:hue-rotate(180deg);
+
+}
+
+.aboutimg:hover{
+     filter:hue-rotate(0deg);
+}
+
+.imgposition{
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    z-index: 1;
+}
+
+.col-lg-5{
+    position: relative;
+    margin-left: 0px;
+}
+
+.col-lg-7{
+    padding-left: 40px;
+}
+
+ul.grid{
+    display: grid;
+    grid-template-columns: auto;
+    list-style: none;
+    margin:0px 0px 10px 0px;
+    padding: 20px;
+    font-size: 14px;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+}
+
+.liabout::before{
+    content: "▹";
+    color: #64ffda;
+    font-size: 14px;
+    line-height: 12px;
+    margin: 5px 6px 0px 0px;
+    
+
+}
+
+.liabout{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: #8892b0;
+
+}
+
+
+.workSectionContent1{
+    position: relative;
+}
+
+.workSectionContent2{
+    position: relative;
+    top: 400px;
+}
+
+.workSectionContent3{
+    position: relative;
+    top: 800px;
+}
+
+.workimg{
+    height:300px;
+    width: 600px;
+    border-radius: 5px;
+    filter:hue-rotate(20deg); 
+    opacity: 0.5;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.workimg:hover{
+    filter:hue-rotate(0deg);
+    opacity: 1;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.workimgPosition{
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+.contentPos{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 2;
+    text-align: right;
+}
+
+.workContent{
+    background-color: #112240;
+    border-radius: 5px;
+    height: 130px;
+    width: 470px;
+    padding-right: 30px;
+     box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.alignn{
+    height: 130px;
+    width: 470px;
+    text-align: right;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.alignn2{
+    height: 130px;
+    width: 470px;
+    text-align: left;
+    padding: 20px;
+    font-size: 15px;
+}
+.workimg2{
+    height:300px;
+    width: 600px;
+    border-radius: 5px;
+    filter:hue-rotate(20deg); 
+    opacity: 0.5;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.workimg2:hover{
+    filter:hue-rotate(0deg);
+    opacity: 1;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.workimgPosition2{
+    position: absolute;
+    top: 35px;
+    right: 0px;
+}
+
+.contentPos2{
+    position: absolute;
+    top: 0px;
+    left: 30;
+    z-index: 2;
+    align-items: left;
+}
+
+.workContent2{
+    background-color: #112240;
+    border-radius: 5px;
+    height: 130px;
+    width: 470px;
+    padding-right: 30px;
+     box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.projectName{
+    color: #ccd6f6;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-weight: 500;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+
+.projectName:hover{
+    color: #64ffda;
+}
+
+.smallest{
+    font-size: 12px;
+}
+
+.techUsed{
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.iconss{
+    margin:0;
+    color: #8892b0;
+}
+
+.wsc{
+    position: static;
+    height: 1100px ;
+    margin-bottom: 170px;
+}
+.otherProjects{
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.getInTouch{
+    text-align: center;
+    align-content: center;
+    margin-bottom: 100px;
+}
+
+.getInTouchpara{
+    text-align: center;
+     padding-left: 20%;
+     padding-right: 20%;
+     padding-top: 20px;
+     margin-bottom: 50px;
+}
+.medium{
+    font-size: 15px;
+}
+
+.bigheading{
+    font-size: 220%;
+    color: #ccd6f6;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-weight: 700;
+}
+
+.footer{
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #8892b0;
+}
